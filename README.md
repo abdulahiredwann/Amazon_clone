@@ -1,5 +1,5 @@
 # Amazon clone with REACT js
-https://fir-7fe5a.web.app/login
+https://fir-7fe5a.web.app/
 
 ## Available Scripts
 
