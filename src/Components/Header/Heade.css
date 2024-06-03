@@ -6,69 +6,116 @@
     position: sticky;
     top: 0;
     z-index: 100;
-}
-
-.header__logo{
+  }
+  
+  .header__logo {
     width: 100px;
     object-fit: contain;
     margin: 0 20px;
     margin-top: 18px;
-
-}
-
-.header__searchIcon{
-    padding: 5px;
-    height: 22px !important;
-    background-color: #cd9042;
-
-}
-
-.header__search {
+  }
+  
+  .header__search {
     display: flex;
     flex: 1;
     align-items: center;
     border-radius: 24px;
-}
-
-.header__searchInput{
-    height: 11px;
+  }
+  
+  .header__searchInput {
+    height: 12px;
     padding: 10px;
     border: none;
     width: 100%;
-}
-
-.header__option {
+  }
+  
+  .header__searchIcon {
+    padding: 5px;
+    height: 22px !important;
+    background-color: #cd9042;
+  }
+  
+  .header__optionLineOne {
+    font-size: 10px;
+  }
+  
+  .header__optionLineTwo {
+    font-size: 13px;
+    font-weight: 800;
+  }
+  
+  .header__optionBasket {
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+  
+  .header__basketCount {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .header__nav {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .header__option {
     display: flex;
     flex-direction: column;
     margin-left: 10px;
     margin-right: 10px;
     color: white;
-}
+  }
 
-.header__nav {
-    display: flex;
-    justify-content: space-evenly;
-}
-.header__optionLineone{
-    font-size: 10px;
+  @media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
 
-}
-.header__optionLineTwo{
-    font-size: 13px;
-    font-weight: 800;
-}
+    .header__logo {
+        margin: 0 auto;
+    }
 
-.header__optionBasket {
-    display: flex;
-    align-items: center;
-    color: white;
-}
+    .header__search {
+        width: 100%;
+        margin-top: 10px;
+    }
 
-.header__basketCOunt {
-    margin-left: 10px;
-    margin-right: 10px;
-}
+    .header__option {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        margin: 5px 0;
+    }
 
-.header__clearlink {
-    text-decoration: none;
-}
+    .home__row {
+        flex-direction: column;
+    }
+
+    .home__image {
+        margin-bottom: 0;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .header__searchInput {
+        padding: 5px;
+    }
+
+    .header__searchIcon {
+        padding: 2px;
+        height: 18px !important;
+    }
+
+    .header__optionLineOne,
+    .header__optionLineTwo {
+        font-size: 8px;
+    }
+
+    .header__option {
+        margin: 0 5px;
+    }
+  }
