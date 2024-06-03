@@ -1,5 +1,5 @@
 # Amazon clone with REACT js
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+https://fir-7fe5a.web.app/login
 
 ## Available Scripts
 
